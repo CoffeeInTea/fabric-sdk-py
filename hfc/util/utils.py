@@ -40,7 +40,7 @@ def proto_str(x):
 
 proto_b = \
     sys.version_info[0] < 3 and (lambda x: x) or (
-        lambda x: x.encode('latin1'))
+        lambda x: x.encode('utf-8'))
 
 
 def create_serialized_identity(user):
